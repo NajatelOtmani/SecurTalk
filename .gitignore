@@ -1,0 +1,12 @@
+﻿.env
+*.pem
+*.db
+*.sqlite
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+events_pending.jsonl
+ml/data/*.csv
+ml/models/*.joblib
+.vscode/
