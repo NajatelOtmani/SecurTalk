@@ -1,0 +1,11 @@
+{
+  "message_id": "6c0e4b7a-1d2f-4e55-8f10-0a9b9c1d2e3f",
+  "score": 0.94,
+  "label": "Phishing",
+  "reasons": [
+    { "code": "URL_BRAND_IMITATION", "text": "Le domaine imite Microsoft (micros0ft)" },
+    { "code": "TEXT_URGENCY", "text": "Message demandant une action immédiate" }
+  ],
+  "model_version": "rf-0.3",
+  "latency_ms": 42
+}

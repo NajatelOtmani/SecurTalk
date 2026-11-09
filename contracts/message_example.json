@@ -1,0 +1,13 @@
+{
+  "message_id": "6c0e4b7a-1d2f-4e55-8f10-0a9b9c1d2e3f",
+  "conversation_id": "conv_u_1a_u_2b",
+  "sender_id": "u_1a",
+  "receiver_id": "u_2b",
+  "mode": "GCM",
+  "key_id": "k_0003",
+  "counter": 17,
+  "nonce_b64": "q1w2e3r4t5y6u7i8",
+  "ciphertext_b64": "....",
+  "tag_b64": "....",
+  "timestamp": "2026-11-07T10:15:30Z"
+}

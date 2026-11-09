@@ -1,0 +1,10 @@
+{
+  "event_id": "b3f1c2e4-7a55-4c1d-9a0e-5d2f6f0a1111",
+  "timestamp": "2026-11-07T10:15:30Z",
+  "source": "auth",
+  "event_type": "LOGIN_FAIL",
+  "severity": "low",
+  "actor": { "user_id": null, "username": "alice", "ip": "192.168.1.20" },
+  "target": { "user_id": "u_8f3a1c", "conversation_id": null },
+  "details": { "reason": "bad_password", "attempt_number": 3 }
+}

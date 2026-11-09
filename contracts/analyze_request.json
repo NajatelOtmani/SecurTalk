@@ -1,0 +1,8 @@
+{
+  "message_id": "6c0e4b7a-1d2f-4e55-8f10-0a9b9c1d2e3f",
+  "sender_id": "u_1a",
+  "receiver_id": "u_2b",
+  "conversation_id": "conv_u_1a_u_2b",
+  "text": "Cliquez ici pour vérifier votre compte",
+  "urls": ["http://micros0ft-login.com/verify"]
+}
