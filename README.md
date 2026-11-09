@@ -1,4 +1,4 @@
-﻿# SecureTalk Platform
+# SecureTalk Platform
 
 ## Ports Utilisés
 * **Backend** : `8000`
