@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+websockets
+pydantic
+sqlalchemy
+argon2-cffi
+requests
+httpx
+pytest
