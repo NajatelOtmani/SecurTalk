@@ -1,5 +1,5 @@
 {
-  "model_version": "mock-0.1",
+  "model_version": "rules-0.1",
   "thresholds": { "safe_below": 0.40, "phishing_from": 0.80 },
   "limits": { "max_text_chars": 5000, "max_urls": 20 }
 }

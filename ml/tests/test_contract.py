@@ -26,8 +26,10 @@ def test_analyze_matches_contract():
     d = r.json()
     assert d["message_id"] == EXAMPLE["message_id"]
     assert set(d) == {"message_id", "score", "label", "reasons", "model_version", "latency_ms"}
-    assert d["label"] == "Phishing" and d["score"] == 0.94
-    assert all(x["code"] in REASON_CODES for x in d["reasons"])
+    assert d["label"] == "Phishing" and d["score"] >= 0.80
+    codes = {x["code"] for x in d["reasons"]}
+    assert "URL_BRAND_IMITATION" in codes and "TEXT_ACCOUNT_VERIFICATION" in codes
+    assert codes <= REASON_CODES
 
 
 def test_empty_text_and_no_urls_ok():

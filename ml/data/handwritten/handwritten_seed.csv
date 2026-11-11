@@ -1,0 +1,31 @@
+id,text,urls,label,lang,category,template_id
+hw000,yo can you ping me when you're out of the meeting,,0,en,chat,hw000
+hw001,"Le client a validé la maquette, on passe à l'étape suivante 🎉",,0,fr,chat,hw001
+hw002,عندي سؤال حول التقرير، هل نتحدث بعد الظهر؟,,0,ar,chat,hw002
+hw003,"Reminder: password policy training on Friday, details on the intranet",https://learn.microsoft.com/training,0,en,hard_negative,hw003
+hw004,Can you reset my access to the shared drive? Thanks,,0,en,hard_negative,hw004
+hw005,"Vous avez reçu un virement du client, merci de confirmer en compta",,0,fr,hard_negative,hw005
+hw006,"Your invoice #4521 has been paid, thanks for the quick turnaround!",,0,en,hard_negative,hw006
+hw007,"Je t'envoie le code du badge pour la salle de réunion : 4821, valable aujourd'hui",,0,fr,hard_negative,hw007
+hw008,"Salam, wach kayn chi wa7ed 3ndo charger dyal laptop ?",,0,mixed,chat,hw008
+hw009,"URGENT !! j'ai oublié mon laptop au bureau, quelqu'un peut me l'apporter ?",,0,fr,urgent_legit,hw009
+hw010,"PR is ready for review, CI is green",https://github.com/equipe/projet/pull/42,0,en,docs,hw010
+hw011,شكرا على المعلومات، سأرسل لك الملخص مساء اليوم,,0,ar,chat,hw011
+hw012,Pense à vérifier ton compte rendu avant de l'envoyer au client,,0,fr,hard_negative,hw012
+hw013,"IT will update your laptop tonight, please leave it plugged in",,0,en,hard_negative,hw013
+hw014,Le lien de la visio de demain 9h,https://teams.microsoft.com/l/meetup-join/abc,0,fr,docs,hw014
+hw015,"Hi, quick favour. I'm stuck in a board meeting, can you grab some Apple gift cards? Will pay you back",,1,en,ceo_fraud,hw015
+hw016,Notification: Your mailbox is almost full. Upgrade storage now to avoid losing emails,http://mail-upgrade-center.top/storage,1,en,mailbox,hw016
+hw017,"Dear user, unusual sign-in detected on your Microsft account. Secure it now",http://microsft-secure.net/login,1,en,security_alert,hw017
+hw018,"Bonjour, nous avons besoin de vos identifiants pour finaliser la migration de votre messagerie",,1,fr,credential_request,hw018
+hw019,تم رصد نشاط غير معتاد على حسابك البنكي، سجل الدخول للتحقق,http://attijari-secure.top/login,1,ar,bank,hw019
+hw020,Votre colis n'a pas pu être livré. Reprogrammez la livraison ici,https://bit.ly/3xYzAbC,1,fr,delivery,hw020
+hw021,"Remote job offer, 300$/day, no experience needed. Message me on Telegram to start today",,1,en,job_scam,hw021
+hw022,"Salam, rbe7ti tirage 3la telephone, dkhel hna bach tstalem",http://203.0.113.50/gift,1,mixed,prize,hw022
+hw023,"Service paie : votre bulletin de salaire est disponible, connectez-vous pour le consulter",http://paie-portail.xyz/login,1,fr,payroll,hw023
+hw024,Alex shared 'Salary_2026.xlsx' with you,http://docs-gooogle.top/open,1,en,shared_doc,hw024
+hw025,"Veuillez régler la facture ci-jointe aujourd'hui, le compte bancaire a changé, nouvel IBAN dans le PDF",,1,fr,invoice,hw025
+hw026,للتحقق من حسابك أرسل لنا رقم بطاقتك والرمز السري,,1,ar,credential_request,hw026
+hw027,"Double your bitcoin in 24h, guaranteed returns, send to the wallet below",,1,en,crypto,hw027
+hw028,"Connexion inhabituelle depuis un nouvel appareil. Si ce n'est pas vous, sécurisez votre compte",https://paypa1-securite.com/verifier,1,fr,security_alert,hw028
+hw029,"Are you at your desk? I need you to handle something confidential for me, reply asap",,1,en,ceo_fraud,hw029
