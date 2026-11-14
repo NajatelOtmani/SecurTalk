@@ -10,7 +10,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Protocol, Tuple
 
-from .config import MAX_TEXT_CHARS, MAX_URLS, PHISHING_FROM, label_from_score
+from .config import MAX_TEXT_CHARS, MAX_URLS, SAFE_BELOW, label_from_score
 from .text_features import TextAnalyzer
 from .url_features import UrlAnalyzer
 
@@ -20,7 +20,7 @@ _EMPTY_URL_FEATURES = {f"url_{k}": 0 for k in UrlAnalyzer().check_domain("").fea
 
 
 class MLModelLike(Protocol):
-    def predict(self, features: Dict[str, float]) -> float: ...
+    def predict(self, text: str, features: Dict[str, float]) -> float: ...
 
 
 def extract_urls(text: str) -> List[str]:
@@ -68,10 +68,11 @@ class PhishingDetector:
 
         reasons = list(u.reasons) + list(t.reasons)
         if self.model is not None:                      # étape 6
-            m = float(self.model.predict(features))
-            score = max(score, m)
-            if m >= PHISHING_FROM:
-                reasons.append(("MODEL_HIGH_SCORE", "Le modèle d'analyse estime ce message très risqué"))
+            m = float(self.model.predict(text, features))
+            if m > score:                      # le modèle repère ce que les règles ratent
+                score = m
+                if m >= SAFE_BELOW:
+                    reasons.append(("MODEL_HIGH_SCORE", "Le modèle d'analyse estime ce message risqué"))
 
         score = round(min(max(score, 0.0), 1.0), 4)
         return Detection(score=score, label=label_from_score(score), reasons=reasons,

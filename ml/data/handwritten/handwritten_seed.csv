@@ -29,3 +29,75 @@ hw026,للتحقق من حسابك أرسل لنا رقم بطاقتك والر�
 hw027,"Double your bitcoin in 24h, guaranteed returns, send to the wallet below",,1,en,crypto,hw027
 hw028,"Connexion inhabituelle depuis un nouvel appareil. Si ce n'est pas vous, sécurisez votre compte",https://paypa1-securite.com/verifier,1,fr,security_alert,hw028
 hw029,"Are you at your desk? I need you to handle something confidential for me, reply asap",,1,en,ceo_fraud,hw029
+hw030,"Salut, tu peux me renvoyer le code de la salle ?",,0,fr,hard_negative,hw030
+hw031,"La réunion est décalée à 15h, on se retrouve en salle B2",,0,fr,normal,hw031
+hw032,"Merci pour ton aide, je t'envoie le résumé ce soir",,0,fr,normal,hw032
+hw033,Tu as vu le mail du client ? Il veut une réponse avant vendredi,,0,fr,normal,hw033
+hw034,Voici le lien du dossier partagé pour la présentation,https://drive.google.com/drive/folders/abc123,0,fr,hard_negative,hw034
+hw035,N'oublie pas de valider ton compte-rendu dans l'outil interne avant ce soir,,0,fr,hard_negative,hw035
+hw036,"Ma banque m'a appelé ce matin, ma carte est bien arrivée",,0,fr,hard_negative,hw036
+hw037,Urgent : peux-tu m'appeler quand tu as une minute ? C'est pour le planning,,0,fr,hard_negative,hw037
+hw038,"Le colis est arrivé au bureau, il est à l'accueil",,0,fr,hard_negative,hw038
+hw039,On déjeune ensemble demain ? Je propose midi et demi,,0,fr,normal,hw039
+hw040,Voici la doc officielle pour l'installation de Python,https://docs.python.org/3/,0,fr,hard_negative,hw040
+hw041,"Je t'envoie le mot de passe du wifi invité à l'oral, ne le note nulle part",,0,fr,hard_negative,hw041
+hw042,"Ton ticket a été clôturé, merci de confirmer que tout fonctionne",,0,fr,hard_negative,hw042
+hw043,Peux-tu relire mon rapport avant demain 10h ? Merci d'avance,,0,fr,normal,hw043
+hw044,Cliquez ici pour vérifier votre compte immédiatement,http://micros0ft-login.com/verify,1,fr,account_verification,hw044
+hw045,"Votre compte sera suspendu dans 24h, confirmez vos identifiants maintenant",http://secure-banque-verif.top/login,1,fr,threat,hw045
+hw046,"Colis en attente : réglez 1,99 EUR de frais de douane pour la livraison",http://suivi-colis-express.xyz/pay,1,fr,delivery,hw046
+hw047,"Félicitations, vous avez gagné un iPhone ! Réclamez votre cadeau avant ce soir",http://cadeau-gagnant.top/claim,1,fr,prize,hw047
+hw048,"Ta boîte mail est presque pleine, augmente ton espace maintenant",http://mail-upgrade.top/x,1,fr,mailbox,hw048
+hw049,"Salut, urgent, achète 3 cartes cadeaux de 100 euros et envoie-moi les codes",,1,fr,money,hw049
+hw050,"Je suis en réunion, envoie-moi ton mot de passe pour que je dépanne ton accès",,1,fr,credential,hw050
+hw051,"Activité suspecte détectée sur votre compte, connectez-vous pour le sécuriser",http://198.51.100.23/secure,1,fr,account_verification,hw051
+hw052,"Virement en attente de validation, saisissez votre code de carte pour recevoir les fonds",http://virement-secure.click/v,1,fr,bank,hw052
+hw053,"Impôts : un remboursement de 312 EUR vous attend, remplissez ce formulaire",http://remboursement-impots-fr.top/form,1,fr,money,hw053
+hw054,"Votre session a expiré, reconnectez-vous ici pour continuer",http://bit.ly/3xYzAbC,1,fr,account_verification,hw054
+hw055,Dernier avertissement : régularisez votre facture sous 12h ou action en justice,http://facture-pay.cfd/regul,1,fr,threat,hw055
+hw056,"Bonjour, le PDG demande un virement confidentiel aujourd'hui, réponds-moi vite",,1,fr,ceo_fraud,hw056
+hw057,Mettez à jour vos coordonnées bancaires pour éviter la fermeture de votre compte,http://paypa1-secure.com/update,1,fr,bank,hw057
+hw058,"Hey, can you send me the meeting notes from yesterday?",,0,en,normal,hw058
+hw059,"The deploy is scheduled for 5pm, please review the checklist",,0,en,normal,hw059
+hw060,Here is the official docs page for the API,https://docs.github.com/en/rest,0,en,hard_negative,hw060
+hw061,Can you reset my access on the internal portal? I forgot my password,,0,en,hard_negative,hw061
+hw062,"Urgent: the server is down, can you join the call now?",,0,en,hard_negative,hw062
+hw063,"Your package arrived at the front desk, please pick it up",,0,en,hard_negative,hw063
+hw064,"Thanks for the update, I will review it tonight",,0,en,normal,hw064
+hw065,Lunch at 12:30? I booked a table for four,,0,en,normal,hw065
+hw066,"Please find the invoice attached, payment is due next month as agreed",,0,en,hard_negative,hw066
+hw067,I am sharing the Figma file with the team,https://www.figma.com/file/xyz,0,en,hard_negative,hw067
+hw068,"Your mailbox is almost full, upgrade now",http://mail-upgrade.top/x,1,en,mailbox,hw068
+hw069,Your account has been locked. Verify your identity within 24 hours,http://secure-paypa1.com/verify,1,en,account_verification,hw069
+hw070,"Congratulations! You won a $500 gift card, claim it now",http://prize-reward.xyz/win,1,en,prize,hw070
+hw071,"Unusual sign-in detected on your Microsoft account, confirm your password",http://micros0ft-support.net/signin,1,en,credential,hw071
+hw072,"Your parcel is on hold, pay the small delivery fee to release it",http://dhl-track.icu/pay,1,en,delivery,hw072
+hw073,"Are you available? I need you to buy gift cards for a client, reply ASAP",,1,en,ceo_fraud,hw073
+hw074,"Final notice: your invoice is overdue, pay immediately to avoid legal action",http://203.0.113.50/invoice,1,en,threat,hw074
+hw075,Update your payroll details now to receive your salary on time,http://hr-payroll-update.top/form,1,en,credential,hw075
+hw076,"Your Netflix payment failed, update your card to avoid suspension",http://netfIix-billing.com/update,1,en,bank,hw076
+hw077,Security alert: click the link to keep your LinkedIn account active,http://linkedln-verify.com/a,1,en,account_verification,hw077
+hw078,شكرا على المساعدة، سأرسل لك الملخص مساء اليوم,,0,ar,normal,hw078
+hw079,هل يمكنك إرسال رمز القاعة من فضلك؟,,0,ar,hard_negative,hw079
+hw080,الاجتماع تأجل إلى الساعة الثالثة بعد الظهر,,0,ar,normal,hw080
+hw081,وصلت الطرد إلى مكتب الاستقبال,,0,ar,hard_negative,hw081
+hw082,عاجل: اتصل بي عندما تكون متفرغا بخصوص الجدول,,0,ar,hard_negative,hw082
+hw083,هذا رابط التوثيق الرسمي للمشروع,https://docs.python.org/3/,0,ar,hard_negative,hw083
+hw084,تم تعليق حسابك، اضغط هنا لتأكيد بياناتك خلال 24 ساعة,http://secure-bank-verif.top/login,1,ar,threat,hw084
+hw085,مبروك! لقد ربحت جائزة، اضغط على الرابط لاستلامها الآن,http://prize-win.xyz/claim,1,ar,prize,hw085
+hw086,صندوق بريدك ممتلئ تقريبا، قم بالترقية الآن,http://mail-upgrade.top/x,1,ar,mailbox,hw086
+hw087,أرسل لي كلمة المرور الخاصة بك بسرعة لأصلح حسابك,,1,ar,credential,hw087
+hw088,طردك محجوز، ادفع رسوم الجمارك الآن لاستلامه,http://suivi-colis-express.xyz/pay,1,ar,delivery,hw088
+hw089,تنبيه أمني: تم رصد دخول مشبوه، سجل دخولك الآن لحماية حسابك,http://198.51.100.77/secure,1,ar,account_verification,hw089
+hw090,"Salam, wach tqder tsifet liya l'adresse dyal la salle ?",,0,mixed,hard_negative,hw090
+hw091,"Merci bzaf khoya, ghadi nsifet lik le résumé lyoum",,0,mixed,normal,hw091
+hw092,"L'meeting tbddel l 3h, nchoufk f salle B2",,0,mixed,normal,hw092
+hw093,"Wsel lcolis l'bureau, rah 3and l'accueil",,0,mixed,hard_negative,hw093
+hw094,"Urgent, 3tini un coup de fil melli tkoun libre",,0,mixed,hard_negative,hw094
+hw095,Hna lien dyal le drive dyal la présentation,https://drive.google.com/drive/folders/abc123,0,mixed,hard_negative,hw095
+hw096,"Salam, rbe7ti cadeau, dkhel hna",http://203.0.113.50/gift,1,mixed,prize,hw096
+hw097,"Compte dyalk ghadi y'tsd f 24h, confirmi les identifiants dyalk daba",http://secure-banque-verif.top/login,1,mixed,threat,hw097
+hw098,"Salam, siffet liya le mot de passe dyalk bsor3a, bghit n9ad lik l'accès",,1,mixed,credential,hw098
+hw099,"Colis dyalk mblocki, khelles les frais daba",http://suivi-colis-express.xyz/pay,1,mixed,delivery,hw099
+hw100,"Mailbox dyalk kamla, upgrade daba men hna",http://mail-upgrade.top/x,1,mixed,mailbox,hw100
+hw101,"Chri 3 cartes cadeaux w siffet liya les codes, urgent",,1,mixed,money,hw101

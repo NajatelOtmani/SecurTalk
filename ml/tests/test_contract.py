@@ -49,7 +49,8 @@ def test_missing_field_gives_400_contract_error():
 
 
 def test_thresholds():
-    assert label_from_score(0.39) == "Safe"
-    assert label_from_score(0.40) == "Suspicious"
-    assert label_from_score(0.79) == "Suspicious"
-    assert label_from_score(0.80) == "Phishing"
+    from service.config import PHISHING_FROM, SAFE_BELOW
+    assert label_from_score(SAFE_BELOW - 0.01) == "Safe"
+    assert label_from_score(SAFE_BELOW) == "Suspicious"
+    assert label_from_score(PHISHING_FROM - 0.01) == "Suspicious"
+    assert label_from_score(PHISHING_FROM) == "Phishing"

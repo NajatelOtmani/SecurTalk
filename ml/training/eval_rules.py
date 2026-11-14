@@ -27,7 +27,8 @@ def evaluate(rows, threshold):
 
 if __name__ == "__main__":
     sets = {"test (synthétique)": DATA_DIR / "test.csv",
-            "écrit à la main": DATA_DIR / "handwritten" / "handwritten_seed.csv"}
+            "écrit à la main DEV": DATA_DIR / "handwritten" / "handwritten_seed.csv",
+            "écrit à la main TEST FINAL": DATA_DIR / "handwritten" / "handwritten_test.csv"}
     for name, path in sets.items():
         if not Path(path).exists():
             continue

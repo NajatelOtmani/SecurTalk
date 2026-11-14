@@ -1,6 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
 from service import main
+from service.config import PHISHING_FROM, SAFE_BELOW
 from service.analyzer import PhishingDetector, extract_urls
 from service.schemas import REASON_CODES
 
@@ -14,7 +15,7 @@ def test_extract_urls():
 
 def test_normal_message_is_safe():
     r = D.analyze("Salut, la réunion est à 10h, tu peux envoyer les slides ?", [])
-    assert r.label == "Safe" and r.score < 0.40 and r.reasons == []
+    assert r.label == "Safe" and r.score < SAFE_BELOW and r.reasons == []
 
 
 def test_legit_company_link_is_safe():
@@ -34,7 +35,7 @@ def test_text_only_phishing():
 
 def test_suspicious_middle_zone():
     r = D.analyze("Voir ça", ["https://bit.ly/3abc"])
-    assert r.label == "Suspicious" and 0.40 <= r.score < 0.80
+    assert r.label == "Suspicious" and SAFE_BELOW <= r.score < PHISHING_FROM
 
 
 def test_link_only_in_text_is_still_found():
@@ -50,7 +51,7 @@ def test_score_range_and_codes():
 
 def test_model_hook():
     class Fake:
-        def predict(self, f): return 0.95
+        def predict(self, text, f): return 0.95
     r = PhishingDetector(model=Fake()).analyze("bonjour", [])
     assert r.label == "Phishing" and "MODEL_HIGH_SCORE" in r.reason_codes
 

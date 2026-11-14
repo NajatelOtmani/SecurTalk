@@ -1,0 +1,36 @@
+id,text,urls,label,lang,category,template_id
+ht000,"Bonjour, je te transmets le planning de la semaine prochaine",,0,fr,normal,ht000
+ht001,Tu peux valider mon accès au dépôt Git stp ?,,0,fr,hard_negative,ht001
+ht002,"Rappel : la formation sécurité est demain à 9h, pense à te connecter",,0,fr,hard_negative,ht002
+ht003,Voici le lien de la visio de ce matin,https://meet.google.com/abc-defg-hij,0,fr,hard_negative,ht003
+ht004,"Immédiatement après la réunion, je t'envoie le budget",,0,fr,hard_negative,ht004
+ht005,Mdr j'ai gagné au baby-foot contre Karim 😂,,0,fr,normal,ht005
+ht006,ok,,0,fr,normal,ht006
+ht007,"Votre compte Microsoft a été compromis, cliquez pour le réactiver",http://micr0soft-reactivate.com/a,1,fr,account_verification,ht007
+ht008,Gagnez 500 euros en répondant à ce sondage rapide,http://sondage-gagnant.top/s,1,fr,prize,ht008
+ht009,"Votre colis n'a pas pu être livré, replanifiez avec 1,50 EUR de frais",http://colis-relais-fr.xyz/p,1,fr,delivery,ht009
+ht010,"Bonjour, j'ai besoin de ton code de vérification reçu par SMS, c'est urgent",,1,fr,credential,ht010
+ht011,"Alerte banque : paiement suspect de 899 EUR, annulez-le ici",http://203.0.113.88/annuler,1,fr,bank,ht011
+ht012,"Ton espace de stockage est saturé, libère-le en cliquant ici",http://tinyurl.com/stockage-x,1,fr,mailbox,ht012
+ht013,Can you review my pull request when you have time?,,0,en,normal,ht013
+ht014,Reminder: security training tomorrow at 9am,,0,en,hard_negative,ht014
+ht015,Here is the link to today's recording,https://www.loom.com/share/abc123,0,en,hard_negative,ht015
+ht016,I need your approval on the expense report by Friday,,0,en,hard_negative,ht016
+ht017,lol that bug was hilarious,,0,en,normal,ht017
+ht018,"Your Google account will be closed, verify now to keep access",http://g00gle-accounts.com/verify,1,en,threat,ht018
+ht019,"You have been selected for a free vacation, claim your reward today",http://free-trip-reward.top/c,1,en,prize,ht019
+ht020,Please send me your login credentials so IT can fix your account,,1,en,credential,ht020
+ht021,"Your delivery failed, confirm your address and pay the fee",http://ups-delivery-check.icu/f,1,en,delivery,ht021
+ht022,"Invoice 4471 is overdue, open the attachment link to avoid penalties",http://203.0.113.99/inv,1,en,threat,ht022
+ht023,شكرا جزيلا، سأراجع الملف غدا صباحا,,0,ar,normal,ht023
+ht024,هل يمكنك مساعدتي في تثبيت البرنامج؟,,0,ar,hard_negative,ht024
+ht025,تذكير: الاجتماع غدا في التاسعة,,0,ar,hard_negative,ht025
+ht026,حسابك البنكي مجمد، أدخل بياناتك الآن لإعادة تفعيله,http://bank-secure-ar.top/login,1,ar,bank,ht026
+ht027,ربحت هدية مجانية، سجل الآن قبل انتهاء العرض,http://cadeau-gagnant.top/claim,1,ar,prize,ht027
+ht028,أرسل رمز التحقق الذي وصلك على هاتفك بسرعة,,1,ar,credential,ht028
+ht029,"Salam, l'meeting dyal ghda tbddel l 10h",,0,mixed,normal,ht029
+ht030,"Merci khoya, ghadi nchouf l'rapport had l3chiya",,0,mixed,normal,ht030
+ht031,"Urgent, bghit nhder m3ak 3la le planning",,0,mixed,hard_negative,ht031
+ht032,"Salam, compte dyalk bloqué, dkhel hna bach tfekkou",http://secure-compte-verif.top/login,1,mixed,account_verification,ht032
+ht033,"Rbe7ti iPhone, clique 3la lien daba",http://203.0.113.60/win,1,mixed,prize,ht033
+ht034,"Siffet liya code dyal SMS li wslek, daba please",,1,mixed,credential,ht034
