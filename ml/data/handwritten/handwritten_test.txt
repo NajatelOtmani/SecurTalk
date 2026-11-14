@@ -1,0 +1,42 @@
+# SecureTalk AI - jeu "handwritten" (style chat) - TEST (ne PAS utiliser pour l'entraînement ni le réglage des seuils)
+# Format : label | langue | texte | liens (optionnel) | catégorie (optionnel)
+#
+# ---------- FR ----------
+0 | fr | Bonjour, je te transmets le planning de la semaine prochaine | | normal
+0 | fr | Tu peux valider mon accès au dépôt Git stp ? | | hard_negative
+0 | fr | Rappel : la formation sécurité est demain à 9h, pense à te connecter | | hard_negative
+0 | fr | Voici le lien de la visio de ce matin | https://meet.google.com/abc-defg-hij | hard_negative
+0 | fr | Immédiatement après la réunion, je t'envoie le budget | | hard_negative
+0 | fr | Mdr j'ai gagné au baby-foot contre Karim 😂 | | normal
+0 | fr | ok | | normal
+1 | fr | Votre compte Microsoft a été compromis, cliquez pour le réactiver | http://micr0soft-reactivate.com/a | account_verification
+1 | fr | Gagnez 500 euros en répondant à ce sondage rapide | http://sondage-gagnant.top/s | prize
+1 | fr | Votre colis n'a pas pu être livré, replanifiez avec 1,50 EUR de frais | http://colis-relais-fr.xyz/p | delivery
+1 | fr | Bonjour, j'ai besoin de ton code de vérification reçu par SMS, c'est urgent | | credential
+1 | fr | Alerte banque : paiement suspect de 899 EUR, annulez-le ici | http://203.0.113.88/annuler | bank
+1 | fr | Ton espace de stockage est saturé, libère-le en cliquant ici | http://tinyurl.com/stockage-x | mailbox
+# ---------- EN ----------
+0 | en | Can you review my pull request when you have time? | | normal
+0 | en | Reminder: security training tomorrow at 9am | | hard_negative
+0 | en | Here is the link to today's recording | https://www.loom.com/share/abc123 | hard_negative
+0 | en | I need your approval on the expense report by Friday | | hard_negative
+0 | en | lol that bug was hilarious | | normal
+1 | en | Your Google account will be closed, verify now to keep access | http://g00gle-accounts.com/verify | threat
+1 | en | You have been selected for a free vacation, claim your reward today | http://free-trip-reward.top/c | prize
+1 | en | Please send me your login credentials so IT can fix your account | | credential
+1 | en | Your delivery failed, confirm your address and pay the fee | http://ups-delivery-check.icu/f | delivery
+1 | en | Invoice 4471 is overdue, open the attachment link to avoid penalties | http://203.0.113.99/inv | threat
+# ---------- AR ----------
+0 | ar | شكرا جزيلا، سأراجع الملف غدا صباحا | | normal
+0 | ar | هل يمكنك مساعدتي في تثبيت البرنامج؟ | | hard_negative
+0 | ar | تذكير: الاجتماع غدا في التاسعة | | hard_negative
+1 | ar | حسابك البنكي مجمد، أدخل بياناتك الآن لإعادة تفعيله | http://bank-secure-ar.top/login | bank
+1 | ar | ربحت هدية مجانية، سجل الآن قبل انتهاء العرض | http://cadeau-gagnant.top/claim | prize
+1 | ar | أرسل رمز التحقق الذي وصلك على هاتفك بسرعة | | credential
+# ---------- MIXED ----------
+0 | mixed | Salam, l'meeting dyal ghda tbddel l 10h | | normal
+0 | mixed | Merci khoya, ghadi nchouf l'rapport had l3chiya | | normal
+0 | mixed | Urgent, bghit nhder m3ak 3la le planning | | hard_negative
+1 | mixed | Salam, compte dyalk bloqué, dkhel hna bach tfekkou | http://secure-compte-verif.top/login | account_verification
+1 | mixed | Rbe7ti iPhone, clique 3la lien daba | http://203.0.113.60/win | prize
+1 | mixed | Siffet liya code dyal SMS li wslek, daba please | | credential

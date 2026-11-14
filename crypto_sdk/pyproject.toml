@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "securetalk-crypto"
+version = "1.0.0"
+description = "SDK cryptographique SecureTalk AI (AES-GCM, AES-CBC+CMAC, RSA-OAEP, anti-rejeu)"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["securetalk_crypto*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,86 @@
+# SecureTalk AI - jeu "handwritten" (style chat) - DEV
+# Format : label | langue | texte | liens (optionnel) | catégorie (optionnel)
+# label : 0 = légitime, 1 = phishing   |   langue : fr, en, ar, mixed (darija/français/anglais)
+# Plusieurs liens : sépare-les par un espace. Le caractère | est interdit dans le texte.
+# Les lignes qui commencent par # sont ignorées. Aucune donnée réelle : IP réservées (203.0.113.x, 198.51.100.x).
+#
+# ---------- FR légitimes ----------
+0 | fr | Salut, tu peux me renvoyer le code de la salle ? | | hard_negative
+0 | fr | La réunion est décalée à 15h, on se retrouve en salle B2 | | normal
+0 | fr | Merci pour ton aide, je t'envoie le résumé ce soir | | normal
+0 | fr | Tu as vu le mail du client ? Il veut une réponse avant vendredi | | normal
+0 | fr | Voici le lien du dossier partagé pour la présentation | https://drive.google.com/drive/folders/abc123 | hard_negative
+0 | fr | N'oublie pas de valider ton compte-rendu dans l'outil interne avant ce soir | | hard_negative
+0 | fr | Ma banque m'a appelé ce matin, ma carte est bien arrivée | | hard_negative
+0 | fr | Urgent : peux-tu m'appeler quand tu as une minute ? C'est pour le planning | | hard_negative
+0 | fr | Le colis est arrivé au bureau, il est à l'accueil | | hard_negative
+0 | fr | On déjeune ensemble demain ? Je propose midi et demi | | normal
+0 | fr | Voici la doc officielle pour l'installation de Python | https://docs.python.org/3/ | hard_negative
+0 | fr | Je t'envoie le mot de passe du wifi invité à l'oral, ne le note nulle part | | hard_negative
+0 | fr | Ton ticket a été clôturé, merci de confirmer que tout fonctionne | | hard_negative
+0 | fr | Peux-tu relire mon rapport avant demain 10h ? Merci d'avance | | normal
+# ---------- FR phishing ----------
+1 | fr | Cliquez ici pour vérifier votre compte immédiatement | http://micros0ft-login.com/verify | account_verification
+1 | fr | Votre compte sera suspendu dans 24h, confirmez vos identifiants maintenant | http://secure-banque-verif.top/login | threat
+1 | fr | Colis en attente : réglez 1,99 EUR de frais de douane pour la livraison | http://suivi-colis-express.xyz/pay | delivery
+1 | fr | Félicitations, vous avez gagné un iPhone ! Réclamez votre cadeau avant ce soir | http://cadeau-gagnant.top/claim | prize
+1 | fr | Ta boîte mail est presque pleine, augmente ton espace maintenant | http://mail-upgrade.top/x | mailbox
+1 | fr | Salut, urgent, achète 3 cartes cadeaux de 100 euros et envoie-moi les codes | | money
+1 | fr | Je suis en réunion, envoie-moi ton mot de passe pour que je dépanne ton accès | | credential
+1 | fr | Activité suspecte détectée sur votre compte, connectez-vous pour le sécuriser | http://198.51.100.23/secure | account_verification
+1 | fr | Virement en attente de validation, saisissez votre code de carte pour recevoir les fonds | http://virement-secure.click/v | bank
+1 | fr | Impôts : un remboursement de 312 EUR vous attend, remplissez ce formulaire | http://remboursement-impots-fr.top/form | money
+1 | fr | Votre session a expiré, reconnectez-vous ici pour continuer | http://bit.ly/3xYzAbC | account_verification
+1 | fr | Dernier avertissement : régularisez votre facture sous 12h ou action en justice | http://facture-pay.cfd/regul | threat
+1 | fr | Bonjour, le PDG demande un virement confidentiel aujourd'hui, réponds-moi vite | | ceo_fraud
+1 | fr | Mettez à jour vos coordonnées bancaires pour éviter la fermeture de votre compte | http://paypa1-secure.com/update | bank
+# ---------- EN légitimes ----------
+0 | en | Hey, can you send me the meeting notes from yesterday? | | normal
+0 | en | The deploy is scheduled for 5pm, please review the checklist | | normal
+0 | en | Here is the official docs page for the API | https://docs.github.com/en/rest | hard_negative
+0 | en | Can you reset my access on the internal portal? I forgot my password | | hard_negative
+0 | en | Urgent: the server is down, can you join the call now? | | hard_negative
+0 | en | Your package arrived at the front desk, please pick it up | | hard_negative
+0 | en | Thanks for the update, I will review it tonight | | normal
+0 | en | Lunch at 12:30? I booked a table for four | | normal
+0 | en | Please find the invoice attached, payment is due next month as agreed | | hard_negative
+0 | en | I am sharing the Figma file with the team | https://www.figma.com/file/xyz | hard_negative
+# ---------- EN phishing ----------
+1 | en | Your mailbox is almost full, upgrade now | http://mail-upgrade.top/x | mailbox
+1 | en | Your account has been locked. Verify your identity within 24 hours | http://secure-paypa1.com/verify | account_verification
+1 | en | Congratulations! You won a $500 gift card, claim it now | http://prize-reward.xyz/win | prize
+1 | en | Unusual sign-in detected on your Microsoft account, confirm your password | http://micros0ft-support.net/signin | credential
+1 | en | Your parcel is on hold, pay the small delivery fee to release it | http://dhl-track.icu/pay | delivery
+1 | en | Are you available? I need you to buy gift cards for a client, reply ASAP | | ceo_fraud
+1 | en | Final notice: your invoice is overdue, pay immediately to avoid legal action | http://203.0.113.50/invoice | threat
+1 | en | Update your payroll details now to receive your salary on time | http://hr-payroll-update.top/form | credential
+1 | en | Your Netflix payment failed, update your card to avoid suspension | http://netfIix-billing.com/update | bank
+1 | en | Security alert: click the link to keep your LinkedIn account active | http://linkedln-verify.com/a | account_verification
+# ---------- AR légitimes ----------
+0 | ar | شكرا على المساعدة، سأرسل لك الملخص مساء اليوم | | normal
+0 | ar | هل يمكنك إرسال رمز القاعة من فضلك؟ | | hard_negative
+0 | ar | الاجتماع تأجل إلى الساعة الثالثة بعد الظهر | | normal
+0 | ar | وصلت الطرد إلى مكتب الاستقبال | | hard_negative
+0 | ar | عاجل: اتصل بي عندما تكون متفرغا بخصوص الجدول | | hard_negative
+0 | ar | هذا رابط التوثيق الرسمي للمشروع | https://docs.python.org/3/ | hard_negative
+# ---------- AR phishing ----------
+1 | ar | تم تعليق حسابك، اضغط هنا لتأكيد بياناتك خلال 24 ساعة | http://secure-bank-verif.top/login | threat
+1 | ar | مبروك! لقد ربحت جائزة، اضغط على الرابط لاستلامها الآن | http://prize-win.xyz/claim | prize
+1 | ar | صندوق بريدك ممتلئ تقريبا، قم بالترقية الآن | http://mail-upgrade.top/x | mailbox
+1 | ar | أرسل لي كلمة المرور الخاصة بك بسرعة لأصلح حسابك | | credential
+1 | ar | طردك محجوز، ادفع رسوم الجمارك الآن لاستلامه | http://suivi-colis-express.xyz/pay | delivery
+1 | ar | تنبيه أمني: تم رصد دخول مشبوه، سجل دخولك الآن لحماية حسابك | http://198.51.100.77/secure | account_verification
+# ---------- MIXED (darija / français / anglais) légitimes ----------
+0 | mixed | Salam, wach tqder tsifet liya l'adresse dyal la salle ? | | hard_negative
+0 | mixed | Merci bzaf khoya, ghadi nsifet lik le résumé lyoum | | normal
+0 | mixed | L'meeting tbddel l 3h, nchoufk f salle B2 | | normal
+0 | mixed | Wsel lcolis l'bureau, rah 3and l'accueil | | hard_negative
+0 | mixed | Urgent, 3tini un coup de fil melli tkoun libre | | hard_negative
+0 | mixed | Hna lien dyal le drive dyal la présentation | https://drive.google.com/drive/folders/abc123 | hard_negative
+# ---------- MIXED phishing ----------
+1 | mixed | Salam, rbe7ti cadeau, dkhel hna | http://203.0.113.50/gift | prize
+1 | mixed | Compte dyalk ghadi y'tsd f 24h, confirmi les identifiants dyalk daba | http://secure-banque-verif.top/login | threat
+1 | mixed | Salam, siffet liya le mot de passe dyalk bsor3a, bghit n9ad lik l'accès | | credential
+1 | mixed | Colis dyalk mblocki, khelles les frais daba | http://suivi-colis-express.xyz/pay | delivery
+1 | mixed | Mailbox dyalk kamla, upgrade daba men hna | http://mail-upgrade.top/x | mailbox
+1 | mixed | Chri 3 cartes cadeaux w siffet liya les codes, urgent | | money

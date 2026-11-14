@@ -1,0 +1,8 @@
+# Modèle de fichier pour training.import_handwritten
+# Copie ce fichier (ex. : messages_amie.txt), supprime les # devant les lignes, écris tes messages.
+# label | langue | texte | liens (optionnel) | catégorie (optionnel)
+#
+# 0 | fr | Salut, tu peux me renvoyer le code de la salle ? | | hard_negative
+# 1 | en | Your mailbox is almost full, upgrade now | http://mail-upgrade.top/x | mailbox
+# 0 | ar | شكرا على المساعدة، سأرسل لك الملخص مساء اليوم
+# 1 | mixed | Salam, rbe7ti cadeau, dkhel hna | http://203.0.113.50/gift | prize

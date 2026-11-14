@@ -1,0 +1,1 @@
+{ "phishing_policy": "block", "ml_unavailable": "send_with_notice" }
