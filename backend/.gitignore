@@ -1,0 +1,9 @@
+# Fichiers locaux du backend : ne jamais envoyer sur GitHub
+events.jsonl
+events_pending.jsonl
+*.db
+*.sqlite
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
