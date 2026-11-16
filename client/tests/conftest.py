@@ -6,6 +6,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import storage  # noqa: E402
 
 
+_PAIRS = {}  # une paire RSA par nom pour toute la session de tests
+
+
 class Net:
     """Faux backend en mémoire."""
     def __init__(self):
@@ -26,7 +29,7 @@ class FakeClient:
     def __init__(self, net, name, uid):
         import securetalk_crypto as sdk
         self.net, self.username, self.user_id = net, name, uid
-        priv, pub = sdk.RSAKeyExchange.generate_keypair()
+        priv, pub = _PAIRS.setdefault(name, sdk.RSAKeyExchange.generate_keypair())
         storage.save_private_key(name, priv)
         net.pubs[name] = pub
 

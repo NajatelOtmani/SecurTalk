@@ -471,6 +471,8 @@ class MainWindow(QMainWindow):
 
     def closeEvent(self, ev):
         self.ws.stop()
+        for w in list(self._workers):  # laisse finir les appels réseau en cours
+            w.wait(1500)
         self.client.logout()
         super().closeEvent(ev)
 
