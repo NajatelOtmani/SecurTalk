@@ -76,3 +76,24 @@ def test_features_are_numeric():
     f = A.check_domain("http://micros0ft-login.com/verify").features
     assert all(isinstance(v, (int, float)) for v in f.values())
     assert f["n_digits_in_domain"] == 1 and f["brand_imitation"] == 1
+
+
+# --- étape A de l'amélioration : nouvelles features (additives, sans effet sur les règles) ---
+def test_entropy_random_label_higher_than_brand_word():
+    rand = A.check_domain("https://gwrfdz4nmd.wpdns.site/x").features["host_label_entropy"]
+    word = A.check_domain("https://paypal.com").features["host_label_entropy"]
+    assert rand > word
+
+
+def test_free_hosting_feature_but_no_rule_reason():
+    for u in ("https://abc.pages.dev/login", "https://alice.github.io/projet", "https://x.vercel.app"):
+        r = A.check_domain(u)
+        assert r.features["is_free_hosting"] == 1
+        assert r.reasons == [] and r.score == 0.0        # aucune alerte : les étudiants publient là aussi
+    assert A.check_domain("https://www.ensa.ac.ma").features["is_free_hosting"] == 0
+
+
+def test_path_length_and_digit_ratio():
+    f = A.check_domain("http://135461223.site/pl/1145/abc").features
+    assert f["path_length"] == len("/pl/1145/abc") and f["host_digit_ratio"] > 0.8
+    assert A.check_domain("https://github.com").features["path_length"] == 0

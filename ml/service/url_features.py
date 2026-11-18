@@ -162,6 +162,35 @@ class UrlAnalysis:
     reports: List[UrlReport]
 
 
+
+# Hébergeurs gratuits / constructeurs de sites (très utilisés par le phishing actuel : voir flux OpenPhish).
+# ATTENTION : des liens légitimes (projets d'étudiants sur github.io, vercel.app...) en font partie :
+# c'est une FEATURE pour le modèle ML, pas une règle d'alerte.
+FREE_HOSTING = {"pages.dev", "vercel.app", "netlify.app", "github.io", "gitlab.io", "blogspot.com",
+                "weebly.com", "wixsite.com", "web.app", "firebaseapp.com", "workers.dev",
+                "herokuapp.com", "glitch.me", "repl.co", "onrender.com", "000webhostapp.com",
+                "wordpress.com", "webflow.io", "surge.sh", "wpdns.site", "apper.so"}
+
+
+def shannon_entropy(s: str) -> float:
+    """Entropie de Shannon en bits/caractère : élevée pour les chaînes aléatoires (gwrfdz4nmd)."""
+    if not s:
+        return 0.0
+    from math import log2
+    n = len(s)
+    return -sum((c / n) * log2(c / n) for c in (s.count(ch) for ch in set(s)))
+
+
+def path_length(url: str) -> int:
+    s = (url or "").strip()
+    if s and not re.match(r"^[a-zA-Z][a-zA-Z0-9+.\-]*://", s):
+        s = "http://" + s
+    try:
+        u = urlparse(s)
+        return len(u.path) + len(u.query)
+    except ValueError:
+        return 0
+
 # ----------------------------------------------------------------------------
 class UrlAnalyzer:
     def __init__(self, brands: Dict[str, Set[str]] | None = None):
@@ -261,6 +290,10 @@ class UrlAnalyzer:
             "has_ip": is_ip, "is_shortener": shortener, "suspicious_tld": bad_tld,
             "brand_imitation": brand, "homoglyph": homoglyph,
             "has_at_symbol": int(has_at), "uses_https": int(url.strip().lower().startswith("https://")),
+            "host_label_entropy": round(max((shannon_entropy(l) for l in name_labels if l != "www"), default=0.0), 3),
+            "host_digit_ratio": round(sum(c.isdigit() for c in "".join(name_labels)) / max(len("".join(name_labels)), 1), 3),
+            "is_free_hosting": int(UrlAnalyzer._split(host)[2] in FREE_HOSTING),
+            "path_length": path_length(url),
         }
 
     # -- analyse d'une liste de liens (ce que main.py appellera) -------------
