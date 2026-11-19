@@ -1,0 +1,5 @@
+{
+  "model_version": "rules-0.1",
+  "thresholds": { "safe_below": 0.35, "phishing_from": 0.60 },
+  "limits": { "max_text_chars": 5000, "max_urls": 20 }
+}

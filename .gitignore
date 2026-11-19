@@ -10,3 +10,6 @@ events_pending.jsonl
 ml/data/*.csv
 ml/models/*.joblib
 .vscode/
+
+*.zip
+*.egg-info/
